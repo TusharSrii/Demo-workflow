@@ -35,8 +35,8 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${app.runtime}</muleVersion>
-						<username>${anypoint.username}</username>
-						<password>${anypoint.password}</password>
+						<username>${clientIdAnypointPlatform}</username>
+						<password>${clientSecretAnypointPlatform}</password>
 						<applicationName>demo-workflow</applicationName>
 						<environment>Sandbox</environment>
 						<region>us-east-2</region>
