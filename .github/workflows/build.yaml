@@ -63,4 +63,9 @@ jobs:
         mvn deploy -DmuleDeploy \
          -Dmule.artifact=$artifactName \
          -Danypoint.username="$USERNAME" \
-         -Danypoint.password="$PASSWORD" 
+         -Danypoint.password="$PASSWORD" \
+         -Dapp.name = "demo-workflow" \
+         -Denv = "Sandbox" \
+         -Dregion = "us-east-2" \
+         -Dworkers = "1" \
+         -DworkerType = "MICRO"
