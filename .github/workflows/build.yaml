@@ -41,7 +41,7 @@ jobs:
 # Deploy to CloudHub
     - name: Deploy             
       run: |
-        mvn -U -V -e -B -DskipTests deploy --file pom.xml -DmuleDeploy \
+        mvn deploy -DmuleDeploy \
         -Danypoint.username=${{ env.CLOUDHUB_ID}} \
         -Danypoint.password=${{ env.CLOUDHUB_SECRET}} \
         -Dcloudhub.environment=${{ env.CLOUDHUB_ENVIRONMENT}} \
